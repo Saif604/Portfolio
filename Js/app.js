@@ -2,6 +2,7 @@
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
 const navBtn = document.querySelector("#nav-btn");
+const dateElem = document.querySelector(".curr-date");
 
 navBtn.addEventListener("click", (e) => {
   sidebar.classList.toggle("show-sidebar");
@@ -19,3 +20,5 @@ window.addEventListener("scroll", (e) => {
   if (window.scrollY > navHeight) navBar.classList.add("still-nav");
   else navBar.classList.remove("still-nav");
 });
+
+dateElem.innerHTML = new Date().getFullYear();
