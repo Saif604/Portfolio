@@ -1,0 +1,21 @@
+
+#nav{
+    position: relative;
+    opacity: 0.8;
+}
+.contact-page{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--clr-primary-10);
+}
+.contact-info{
+    text-align: center;
+}
+.contact-info a{
+    color: var(--clr-primary-5);
+}
+
+footer{
+    opacity: 0.8;
+}

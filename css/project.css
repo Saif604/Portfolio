@@ -1,0 +1,74 @@
+
+#nav{
+    position: relative;
+    opacity: 0.8;
+}
+
+/* 
+==========
+PROJECTS
+==========
+*/
+.projects{
+    background-color: #ddd;
+}
+.projects-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+gap: 2rem 1rem;
+}
+.project{
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+.project-img{
+    position: relative;
+}
+.icon-container{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--clr-grey-10);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+}
+.project-icon{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--clr-grey-2);
+    background-color: var(--clr-primary-5);
+    border-radius: 50%;
+}
+.project-photo{
+    height: 17rem;
+    object-fit: cover;
+}
+.project-title{
+    margin-bottom: 1rem;
+}
+.project-info{
+    padding: 2.5rem 1rem 1rem 1rem;
+    background-color: var(--clr-grey-10);
+}
+.footer-icon{
+    color: var(--clr-primary-5);
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.project-footer{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+}
+
+footer{
+    opacity: 0.8;
+}
