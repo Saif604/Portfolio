@@ -4,16 +4,27 @@ ABOUT PAGE
 ============
 */
 
-#nav{
-    position: relative;
+
+#nav {
+  position: relative;
 }
-.about{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    align-items: center;
+.about {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  position: relative;
 }
-.about-header:after{
+.video-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+.about:after{
     content: "";
     position: absolute;
     top: 0;
